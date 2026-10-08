@@ -6,7 +6,7 @@
 <title>JMC Services Corp (website concept)</title>
 <meta name="description" content="Website concept for JMC Services Corp, Garden City South, NY: home improvement, outdoor bars, pool houses, decks and interiors.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 
 *,*::before,*::after{box-sizing:border-box}
@@ -62,7 +62,7 @@ dialog.lbx .lbb button{min-width:54px;min-height:48px;border-radius:10px;border:
 @keyframes flash{0%{box-shadow:0 0 0 0 var(--adm-acc,#000);transform:scale(.96)}40%{box-shadow:0 0 0 8px var(--adm-acc,#000);transform:scale(1)}100%{box-shadow:0 0 0 0 transparent}}
 @media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}*{animation:none!important}}
 
-:root{--bg:#fafaf8;--ink:#111;--soft:#6a6a66;--line:#e2e1dc;--acc:#2f5d50;--ease:cubic-bezier(.2,.7,.2,1);--sans:"Inter Tight",system-ui,sans-serif;--serif:"Instrument Serif",Georgia,serif;--wrap:1240px;--focus:#2f5d50;--bk-acc:#111;--adm-acc:#2f5d50}
+:root{--bg:#fafaf8;--ink:#111;--soft:#6a6a66;--line:#e2e1dc;--acc:#2f5d50;--ease:cubic-bezier(.2,.7,.2,1);--sans:"Schibsted Grotesk",system-ui,sans-serif;--serif:"Instrument Serif",Georgia,serif;--wrap:1240px;--focus:#2f5d50;--bk-acc:#111;--adm-acc:#2f5d50}
 body{background:var(--bg);color:var(--ink);font:400 1.04rem/1.62 var(--sans)}
 h1,h2,h3{margin:0;font-weight:600;letter-spacing:-.035em;line-height:1}
 em{font-family:var(--serif);font-weight:400;font-style:italic;letter-spacing:-.01em}
@@ -151,6 +151,9 @@ nav.main button:hover{color:var(--acc)}
 .info span{font-size:1.15rem;font-weight:600}
 footer{border-top:1px solid var(--line);padding-block:2.2rem;color:var(--soft);font-size:.88rem}
 footer .dis{margin-top:.8rem;font-size:.84rem}
+
+/* design rule: no decorative italic accents in headings */
+:is(h1,h2,h3) :is(em,i){font-style:normal!important;font-family:inherit!important}
 </style>
 </head>
 <body>
@@ -165,7 +168,6 @@ footer .dis{margin-top:.8rem;font-size:.84rem}
 <section class="hero" id="top">
  <div class="t">
   <div>
-   <p class="lab rv" style="display:block;line-height:1.7"><b>Garden City South, NY</b> &middot; Residential &amp; commercial</p>
    <h1 class="rv" style="--d:1;margin-top:1.4rem">Every phase of the home, <em>done right.</em></h1>
    <p class="rv" style="--d:2">Outdoor bars, pool houses, decks, kitchens, baths and fine trim work. Licensed and insured.</p>
    <div class="cta rv" style="--d:3"><button class="btn" type="button" data-go="contact">Get a free estimate</button><button class="btn ghost" type="button" data-go="projects">See projects</button></div>
